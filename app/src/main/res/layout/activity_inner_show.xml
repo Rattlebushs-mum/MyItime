@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".InnerShowActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/inner_show_main_layout"
+        android:scaleType="centerCrop"
+        >
+    </ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#000000ff"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/circle1"
+            android:scaleType="fitXY"
+            android:src="@drawable/raw_back" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#000000ff"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000ff"
+            android:id="@+id/tv_show_title"
+            android:textColor="#ffffff"
+            android:text="title"
+            android:textSize="30sp"
+            android:gravity="center"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:background="#000000ff"
+            android:id="@+id/tv_show_remarks"
+            android:textColor="#ffffff"
+            android:text="remark"
+            android:textSize="28sp"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000ff"
+            android:id="@+id/tv_show_time"
+            android:textColor="#ffffff"
+            android:text="times"
+            android:gravity="center"
+            android:textSize="26sp"
+            ></TextView>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
